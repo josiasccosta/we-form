@@ -4,8 +4,47 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>We form - Cadastrar entidade</title>
+    <link rel="stylesheet" href="../style.css">
+    <link rel="stylesheet" href="/assets/fontawesome-free-6.4.2-web/css/all.css">
 </head>
 <body>
-    
+    <div class="content row">
+
+        <aside class="left-side">
+            <img src="../assets/close-de-diversas-pessoas-dando-as-maos.jpg" alt="close de diversas pessoas dando as maos">
+            <h1 class="logo-title"><span class="text-color">We</span> form</h1>
+        </aside>
+
+        <main class="right-side">
+            <header>
+                <a href="../index.html">
+                    <i class="fa-solid fa-angle-left"></i>
+                </a>
+                <h1 class="cadastro-title">Nova <span class="text-color">entidade</span></h1>
+            </header>
+
+            <form method="post">
+
+                <label for="inome">nome</label>
+                <input type="text" name="nome" id="inome" required placeholder=" Nome completo...">
+                
+                <label for="iatuacao">campo de atuação</label>
+                <select name="fiel" id="input-field">
+                    <option value="" selected disabled required>Selecione uma opção..</option>
+                    <option value="Abrigo de animais">Abrigo de animais</option>
+                    <option value="Desabrigados">Desabrigados</option>
+                    <option value="Orfaos">Orfãos</option>
+                </select>
+
+                <div>
+                    <label for="icoleta">pontos de coleta</label>
+                    <input type="text" name="coleta" id="icoleta" required>
+                    <button><i class="fa-solid fa-plus"></i></button>
+                </div>
+            </form>
+
+            <a href="pages/cadastrar-entidade.html" class="pages-links blue">Cadastrar</a>
+        </main>
+    </div>
 </body>
 </html>
