@@ -1,0 +1,162 @@
+@charset "utf-8";
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap');
+
+
+*,*::after,*::before{
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+}
+
+body{
+    font-family: 'Roboto', sans-serif;
+}
+
+img{
+    max-width: 100%;
+}
+
+.text-color{
+    color: rgba(255, 0, 0, 0.671);
+}
+
+.row{
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 1.5em;
+}
+
+.left-side{
+    min-width: 50%;
+}
+
+.right-side{
+    max-width: 95%;
+    margin: 0 auto;
+}
+
+.logo-title{
+    font-size: 2.5rem;
+    margin-top: 0.5em;
+    text-align: center;
+}
+
+.cadastro-title{
+    font-size: 1.5rem;
+    text-align: center;
+}
+
+.pages-links{
+    text-decoration: none;
+    color: white;
+    padding: 0.5rem 0.7rem;
+    display: block;
+    margin: 0 auto;
+    text-align: center;
+    max-width: 600px;
+    border-radius: 0.5rem;
+    transition: 0.2s;
+}
+
+.pages-links:hover{
+    cursor: pointer;
+    transform: translate(0 ,-3px);
+}
+
+.blue{
+    background-color: rgba(62, 171, 235, 0.911);
+    margin-top: 2rem;
+}
+
+.red{
+    background-color: rgba(255, 0, 0, 0.747);
+    margin: 1rem auto;
+}
+
+p{
+    text-align: center;
+}
+
+.novo-campo-link{
+    color: black;
+}
+
+.link-container{
+    width: 100%;
+    margin: 1rem auto;
+    text-align: center;
+}
+
+@media screen and (min-width: 700px){
+    body{
+        display: flex;
+        height: 100vh;
+        align-items: center;
+    }
+    .content{
+        margin: 1rem;
+    }
+    .row{
+        flex-direction: row;
+        gap: 1rem;
+    }
+
+    main{
+        padding: 0 1rem
+    }
+    .logo-title{
+        font-size: 3.5rem;
+    }
+
+    .cadastro-title{
+        margin: 1rem;
+        font-size: 1.8rem;
+    }
+
+    .left-side{
+        max-width: 50%;
+    }
+
+    .right-side{
+        max-width: 750px;
+    }
+
+    .right-side{
+        border: 1px solid rgba(0, 0, 0, 0.144);
+        border-radius: 0.5em;
+        min-height: 400px;
+    }
+
+    .pages-links{
+        font-size: 1.3rem;
+    }
+
+    p{
+        margin-top: 3rem;
+        font-size: 0.8rem;
+    }
+}
+
+@media screen and (min-width: 1024px){
+    .logo-title{
+        font-size: 4rem;
+    }
+    .cadastro-title{
+        font-size: 2.7rem;
+        text-align: start;
+    }
+    .pages-links{
+        font-size: 1.8rem;
+        padding: 1rem;
+        margin: 3rem auto;
+    }
+    .right-side{
+        min-height: 550px;
+    }
+
+    p{
+        margin-top: 7rem;
+        font-size: 1.2rem;
+    }
+}
